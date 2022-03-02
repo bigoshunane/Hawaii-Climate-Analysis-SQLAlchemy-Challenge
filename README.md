@@ -26,7 +26,7 @@ Remarks for files in repository:
 
   named [temp_analysis_bonus_2_starter.ipynb.](https://github.com/bigoshunane/SQLAlchemy_Challenge_HM8/blob/main/temp_analysis_bonus_2_starter.ipynb)
      
-. The Resources folder contains the hawaii.sqlite database file and 2 csv files containing the measurement and station tables as [Resources.](https://github.com/bigoshunane/SQLAlchemy_Challenge_HM8/tree/main/Resources)
+. The [Resources](https://github.com/bigoshunane/SQLAlchemy_Challenge_HM8/tree/main/Resources)folder contains the hawaii.sqlite database file and 2 csv files containing the measurement and station tables.
 
 . The [images](https://github.com/bigoshunane/SQLAlchemy_Challenge_HM8/tree/main/Images) folder contains visualization images from the analysis and bonus challenges.
 
