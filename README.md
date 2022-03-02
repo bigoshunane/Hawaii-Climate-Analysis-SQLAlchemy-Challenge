@@ -202,7 +202,7 @@ of a difference. But the t-test with very low p-value indicates that the differe
 
  ![r](https://user-images.githubusercontent.com/84547558/156447971-6796d883-91fa-4f8b-b662-1b82471de1e2.png)
 
-      Fig.6 Calculated the rainfall per weather station using the previous year's matching dates.
+      Fig.7 Calculated the rainfall per weather station using the previous year's matching dates.
 
 # Daily Temperature Normals
 
@@ -224,7 +224,7 @@ of a difference. But the t-test with very low p-value indicates that the differe
   
 ![ar](https://user-images.githubusercontent.com/84547558/156448798-54b78941-33e1-4c33-94ba-81cf3ec179ca.png)  
   
-      Fig.7 Area plot for daily min, ave and max temperatures.
+      Fig.8 Area plot for daily min, ave and max temperatures.
 
 
 
