@@ -16,17 +16,21 @@ Two main works done are:
   
 Remarks for files in repository:
      
-. Analyses and visualizations for climate is can be found in the Jupyter notebook called climate_starter.ipynb.
+. Analyses and visualizations for climate is can be found in the Jupyter notebook called [climate_starter.ipynb.](https://github.com/bigoshunane/SQLAlchemy_Challenge_HM8/blob/main/climate_starter.ipynb)
      
-. Analyses and visualizations for temperature analysis_bonus_1 is can be found in the Jupyter notebook called temp_analysis_bonus_1_starter.ipynb.
-     
-. Analyses and visualizations for temperature analysis_bonus_2 is can be found in the Jupyter notebook called temp_analysis_bonus_2_starter.ipynb
-     
-. The Resources folder contains the hawaii.sqlite database file and 2 csv files containing the measurement and station tables.
+. Analyses and visualizations for temperature analysis_bonus_1 is can be found in the Jupyter notebook 
 
-. The images folder contains visualization images from the analysis and bonus challenges.
+  named [temp_analysis_bonus_1_starter.ipynb.](https://github.com/bigoshunane/SQLAlchemy_Challenge_HM8/blob/main/temp_analysis_bonus_1_starter.ipynb)
+     
+. Analyses and visualizations for temperature analysis_bonus_2 is can be found in the Jupyter notebook 
 
-. The app.py file contains the code for a Flask web app to query the climate database.
+  named [temp_analysis_bonus_2_starter.ipynb.](https://github.com/bigoshunane/SQLAlchemy_Challenge_HM8/blob/main/temp_analysis_bonus_2_starter.ipynb)
+     
+. The Resources folder contains the hawaii.sqlite database file and 2 csv files containing the measurement and station tables as [Resources](https://github.com/bigoshunane/SQLAlchemy_Challenge_HM8/tree/main/Resources)
+
+. The images folder contains visualization images from the analysis and bonus challenges.[Images](https://github.com/bigoshunane/SQLAlchemy_Challenge_HM8/tree/main/Images)
+
+. The [app.py](https://github.com/bigoshunane/SQLAlchemy_Challenge_HM8/blob/main/app.py) file contains the code for a Flask web app to query the climate database.
 
 
 The following instructions have been followed and asnwers were computed accordingly and results are included:
