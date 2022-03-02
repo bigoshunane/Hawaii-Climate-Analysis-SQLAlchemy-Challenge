@@ -16,17 +16,17 @@ Two main works done are:
   
 Remarks for files in repository:
      
-     . Analyses and visualizations for climate is can be found in the Jupyter notebook called climate_starter.ipynb.
+. Analyses and visualizations for climate is can be found in the Jupyter notebook called climate_starter.ipynb.
      
-     . Analyses and visualizations for temperature analysis_bonus_1 is can be found in the Jupyter notebook called temp_analysis_bonus_1_starter.ipynb.
+. Analyses and visualizations for temperature analysis_bonus_1 is can be found in the Jupyter notebook called temp_analysis_bonus_1_starter.ipynb.
      
-     . Analyses and visualizations for temperature analysis_bonus_2 is can be found in the Jupyter notebook called temp_analysis_bonus_2_starter.ipynb
+. Analyses and visualizations for temperature analysis_bonus_2 is can be found in the Jupyter notebook called temp_analysis_bonus_2_starter.ipynb
      
-     . The Resources folder contains the hawaii.sqlite database file and 2 csv files containing the measurement and station tables.
+. The Resources folder contains the hawaii.sqlite database file and 2 csv files containing the measurement and station tables.
 
-     . The images folder contains visualization images from the analysis and bonus challenges.
+. The images folder contains visualization images from the analysis and bonus challenges.
 
-     . The app.py file contains the code for a Flask web app to query the climate database.
+. The app.py file contains the code for a Flask web app to query the climate database.
 
 
 The following instructions have been followed and asnwers were computed accordingly and results are included:
