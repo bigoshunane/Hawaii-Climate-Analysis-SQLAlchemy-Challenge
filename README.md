@@ -3,10 +3,16 @@
 The aim of this project is to utilize SQLAlchemy ORM queries, Pandas and Matplotlib and do basic climate analysis given climate database of Honolulu, Hawaii.
 
 Two main works done are:
+
   1. Climate Analysis and exploration.
+  
   2. Climate App
-  3. Bonus challenges - Temperature analysis
-                      - Daily rainfall average
+  
+  3. Bonus challenges   
+              
+                 3.1 Temperature analysis
+  
+                 3.2 Daily rainfall average
   
 Remarks for files in repository:
      
@@ -61,6 +67,7 @@ The following instructions have been followed and asnwers were computed accordin
     
     Fig.2 Summary statistics for precipitation data.
     
+
 # Station Analysis
 
 . Design a query to calculate the total number of stations in the dataset. 
@@ -86,6 +93,15 @@ The following instructions have been followed and asnwers were computed accordin
 ![temp](https://user-images.githubusercontent.com/84547558/156429655-bb2de60a-08b8-4aab-9b8f-25d45dfa0c78.png)
 
     Fig.3 Temperatures recoreded at station USC00519281 within 12 months.
+    
+    
+   .  The database was queired to determine the total number of stations: 9
+
+   . The most active station was determined to be 'USC00519281'
+   
+   ![s9](https://user-images.githubusercontent.com/84547558/156440524-87fd1706-c0a4-4b0f-abdb-aa36bff5338e.png)
+
+    Fig.4 The list of stations and observation counts in descending order.
     
     
 # Step 2 - Climate App
@@ -138,15 +154,27 @@ The following instructions have been followed and asnwers were computed accordin
   
 # Temperature Analysis I
   
-        June and December temperature observations were retrieved by converting string dates to datetime objects in order to filter queries by month.
+ . Hawaii is reputed to enjoy mild weather all year. Is there a meaningful difference between the temperature in, for example, June and December?
+ 
+ . The the average temperature in June at all stations across all available years in the dataset was: 74.94 F.
 
-        Null hypothesis: The mean difference between the temperatures in June and December is zero.
+ . The the average temperature in December at all stations across all available years in the dataset was: 71.04 F.
 
-       A paired t-test was used to compare the means of the same group in this case, the mean temperature observations are of the same stations,
-       just for different timepoints. The p-value of 0.0001 is less than 0.05 so we reject the null hypothesis and conclude that the data is statistically              significant.
+ . Using a paired t-test, it was determined the difference in the means was statistically significant and the analysis and plot are given below.
+
   
-       The mean temperature difference between the June and December is a mere 3.9 degrees Fahrenheit. The result does not appear to show much 
-       of a difference. But the t-test with very low p-value indicates that the difference is statistically significant. So while the difference is meaningful,          the actual difference is not, thereby indicating that you can travel to Hawaii and enjoy in 70 degrees temperature year-round.
+  
+![tem11](https://user-images.githubusercontent.com/84547558/156441478-2c3f5631-d4de-4bcc-8363-1d664fa2713d.png)
+
+     Fig.5 Scatter and histogram plots of June and December temperatures.
+
+June and December temperature observations were retrieved by converting string dates to datetime objects in order to filter queries by month.
+Null hypothesis: The mean difference between the temperatures in June and December is zero.
+A paired t-test was used to compare the means of the same group in this case, the mean temperature observations are of the same stations,
+just for different timepoints. The p-value of 0.0001 is less than 0.05 so we reject the null hypothesis and conclude that the data is statistically              significant.The mean temperature difference between the June and December is a mere 3.9 degrees Fahrenheit. The result does not appear to show much 
+of a difference. But the t-test with very low p-value indicates that the difference is statistically significant. So while the difference is meaningful,          the actual difference is not, thereby indicating that you can travel to Hawaii and enjoy in 70 degrees temperature year-round.
+  
+  
   
   
   
