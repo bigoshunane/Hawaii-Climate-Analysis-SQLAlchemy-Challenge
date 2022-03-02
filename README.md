@@ -26,9 +26,9 @@ Remarks for files in repository:
 
   named [temp_analysis_bonus_2_starter.ipynb.](https://github.com/bigoshunane/SQLAlchemy_Challenge_HM8/blob/main/temp_analysis_bonus_2_starter.ipynb)
      
-. The Resources folder contains the hawaii.sqlite database file and 2 csv files containing the measurement and station tables as [Resources](https://github.com/bigoshunane/SQLAlchemy_Challenge_HM8/tree/main/Resources)
+. The Resources folder contains the hawaii.sqlite database file and 2 csv files containing the measurement and station tables as [Resources.](https://github.com/bigoshunane/SQLAlchemy_Challenge_HM8/tree/main/Resources)
 
-. The images folder contains visualization images from the analysis and bonus challenges.[Images](https://github.com/bigoshunane/SQLAlchemy_Challenge_HM8/tree/main/Images)
+. The [images](https://github.com/bigoshunane/SQLAlchemy_Challenge_HM8/tree/main/Images) folder contains visualization images from the analysis and bonus challenges.
 
 . The [app.py](https://github.com/bigoshunane/SQLAlchemy_Challenge_HM8/blob/main/app.py) file contains the code for a Flask web app to query the climate database.
 
