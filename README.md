@@ -154,7 +154,7 @@ The following instructions have been followed and asnwers were computed accordin
   
 # Temperature Analysis I
   
- . Hawaii is reputed to enjoy mild weather all year. Is there a meaningful difference between the temperature in, for example, June and December?
+ . Hawaii is reputed to enjoy mild weather all year. Is there a meaningful difference between the temperature in June and December?
  
  . The the average temperature in June at all stations across all available years in the dataset was: 74.94 F.
 
@@ -175,9 +175,55 @@ just for different timepoints. The p-value of 0.0001 is less than 0.05 so we rej
 of a difference. But the t-test with very low p-value indicates that the difference is statistically significant. So while the difference is meaningful,          the actual difference is not, thereby indicating that you can travel to Hawaii and enjoy in 70 degrees temperature year-round.
   
   
+# Temperature Analysis II
+  
+. A function called calc_temps that will accept a start date and end date in the format %Y-%m-%d and return the minimum, average, and maximum temperatures for   that range of dates was used to calculate the min, avg, and max temperatures for my trip using the matching dates from the previous year:
+
+      . The lowest temperature recorded was: 58.0 F
+      . The highest temperature recorded was: 87.0 F
+      . The average temperature recorded was: 74.6 F
+  
+![bar](https://user-images.githubusercontent.com/84547558/156444805-ab4bfb41-3e5a-439a-8ac6-bcb57eafd5c4.png)
+  
+      Fig.6 The min, avg, and max temperatures plotted as a bar chart.
   
   
+# Daily Rainfall Average
   
+  . Now that you have an idea of the temperature lets check to see what the rainfall has been, you don't want a when it rains the whole time!
+
+  . Calculate the rainfall per weather station using the previous year's matching dates.
+
+  . Sort this in descending order by precipitation amount and list the station, name, latitude, longitude, and elevation.
+
+ ![r](https://user-images.githubusercontent.com/84547558/156447971-6796d883-91fa-4f8b-b662-1b82471de1e2.png)
+
+      Fig.6 Calculated the rainfall per weather station using the previous year's matching dates.
+
+# Daily Temperature Normals
+
+  . Calculate the daily normals for the duration of your trip. Normals are the averages for the min, avg, and max temperatures. 
+    You are provided with a function called daily_normals that will calculate the daily normals for a specific date. This date string
+    will be in the format %m-%d. Be sure to use all historic TOBS that match that date string.
+ 
+        . Set the start and end date of the trip.
+
+        . Use the date to create a range of dates.
+
+        . Strip off the year and save a list of strings in the format %m-%d.
+
+        . Use the daily_normals function to calculate the normals for each date string and append the results to a list called normals.
+
+        . Load the list of daily normals into a Pandas DataFrame and set the index equal to the date.
+
+        . Use Pandas to plot an area plot (stacked=False) for the daily normals.
+  
+![ar](https://user-images.githubusercontent.com/84547558/156448798-54b78941-33e1-4c33-94ba-81cf3ec179ca.png)  
+  
+      Fig.7 Area plot for daily min, ave and max temperatures.
+
+
+
 
 
   
