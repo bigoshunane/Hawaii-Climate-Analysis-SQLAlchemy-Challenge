@@ -1,4 +1,7 @@
-# SQLAlchemy_Challenge_HM8
+# Hawaii Climate Analysis
+
+
+## Project objective
 
 The aim of this project is to utilize SQLAlchemy ORM queries, Pandas and Matplotlib and do basic climate analysis given climate database of Honolulu, Hawaii.
 
@@ -35,7 +38,7 @@ Remarks for files in repository:
 
 The following instructions have been followed and asnwers were computed accordingly and results are included:
 
-# Step 1 - Climate Analysis and Exploration
+## Step 1 - Climate Analysis and Exploration
 
     . Use the provided starter notebook and hawaii.sqlite files to complete your climate analysis and data exploration.
 
@@ -47,7 +50,7 @@ The following instructions have been followed and asnwers were computed accordin
 
     . Important Don't forget to close out your session at the end of your notebook.
 
-# Precipitation Analysis
+## Precipitation Analysis
 
     . Start by finding the most recent date in the data set.
 
@@ -72,7 +75,7 @@ The following instructions have been followed and asnwers were computed accordin
     Fig.2 Summary statistics for precipitation data.
     
 
-# Station Analysis
+## Station Analysis
 
 . Design a query to calculate the total number of stations in the dataset. 
 
@@ -108,13 +111,13 @@ The following instructions have been followed and asnwers were computed accordin
     Fig.4 The list of stations and observation counts in descending order.
     
     
-# Step 2 - Climate App
+## Step 2 - Climate App
 
  Now that you have completed your initial analysis, design a Flask API based on the queries that you have just developed.
    
     . Use Flask to create your routes.
   
-# Routes
+## Routes
 . /
    . Home page
      
@@ -144,19 +147,19 @@ The following instructions have been followed and asnwers were computed accordin
 
      . When given the start and the end date, calculate the TMIN, TAVG, and TMAX for dates between the start and end date inclusive.
 
-# Hints
+## Hints
 
     . You will need to join the station and measurement tables for some of the queries.
 
     . Use Flask jsonify to convert your API data into a valid JSON response object.
   
-#  Bonus: Other Recommended Analyses
+##  Bonus: Other Recommended Analyses
   
   . The following are optional challenge queries. These are highly recommended to attempt, but not required for the homework.
 
   . Use the provided temp_analysis_bonus_1_starter.ipynb and temp_analysis_bonus_2_starter.ipynb starter notebooks for each bonus challenge.
   
-# Temperature Analysis I
+## Temperature Analysis I
   
  . Hawaii is reputed to enjoy mild weather all year. Is there a meaningful difference between the temperature in June and December?
  
@@ -179,7 +182,7 @@ just for different timepoints. The p-value of 0.0001 is less than 0.05 so we rej
 of a difference. But the t-test with very low p-value indicates that the difference is statistically significant. So while the difference is meaningful,          the actual difference is not, thereby indicating that you can travel to Hawaii and enjoy in 70 degrees temperature year-round.
   
   
-# Temperature Analysis II
+## Temperature Analysis II
   
 . A function called calc_temps that will accept a start date and end date in the format %Y-%m-%d and return the minimum, average, and maximum temperatures for   that range of dates was used to calculate the min, avg, and max temperatures for my trip using the matching dates from the previous year:
 
@@ -192,7 +195,7 @@ of a difference. But the t-test with very low p-value indicates that the differe
       Fig.6 The min, avg, and max temperatures plotted as a bar chart.
   
   
-# Daily Rainfall Average
+## Daily Rainfall Average
   
   . Now that you have an idea of the temperature lets check to see what the rainfall has been, you don't want a when it rains the whole time!
 
@@ -204,7 +207,7 @@ of a difference. But the t-test with very low p-value indicates that the differe
 
       Fig.7 Calculated the rainfall per weather station using the previous year's matching dates.
 
-# Daily Temperature Normals
+## Daily Temperature Normals
 
   . Calculate the daily normals for the duration of your trip. Normals are the averages for the min, avg, and max temperatures. 
     You are provided with a function called daily_normals that will calculate the daily normals for a specific date. This date string
