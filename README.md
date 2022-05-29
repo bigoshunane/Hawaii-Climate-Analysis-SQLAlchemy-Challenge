@@ -121,9 +121,8 @@ Fig.4 The list of stations and observation counts in descending order.
     -  When given the start and the end date, calculate the TMIN, TAVG, and TMAX for dates between the start and end date inclusive.
 
 ## Hints
-
-    -  You will need to join the station and measurement tables for some of the queries.
-    -  Use Flask jsonify to convert your API data into a valid JSON response object.
+-  You will need to join the station and measurement tables for some of the queries.
+-  Use Flask jsonify to convert your API data into a valid JSON response object.
   
 ##  Bonus: Other Recommended Analyses
   
