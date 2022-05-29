@@ -95,9 +95,8 @@ Fig.4 The list of stations and observation counts in descending order.
     
 ## Step 2 - Climate App
 
- Now that you have completed your initial analysis, design a Flask API based on the queries that you have just developed.
-   
-    . Use Flask to create your routes.
+-   Now that you have completed your initial analysis, design a Flask API based on the queries that you have just developed.
+    -  Use Flask to create your routes.
   
 ## Routes
 . /
@@ -105,68 +104,55 @@ Fig.4 The list of stations and observation counts in descending order.
      
    . List all routes that are available.
    
-. /api/v1.0/precipitation
+-   /api/v1.0/precipitation
+    -  Convert the query results to a dictionary using date as the key and prcp as the value.
+    -  Return the JSON representation of your dictionary.
 
-    . Convert the query results to a dictionary using date as the key and prcp as the value.
-
-    . Return the JSON representation of your dictionary.
-
-. /api/v1.0/stations
-
-    . Return a JSON list of stations from the dataset.
+-   /api/v1.0/stations
+     -  Return a JSON list of stations from the dataset.
     
-. /api/v1.0/tobs
-
-    . Query the dates and temperature observations of the most active station for the last year of data.
-
-    . Return a JSON list of temperature observations (TOBS) for the previous year.
+-   /api/v1.0/tobs
+     -  Query the dates and temperature observations of the most active station for the last year of data.
+     -  Return a JSON list of temperature observations (TOBS) for the previous year.
     
-. /api/v1.0/<start> and /api/v1.0/<start>/<end>
-  
-     . Return a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start or start-end range.
-
-     . When given the start only, calculate TMIN, TAVG, and TMAX for all dates greater than and equal to the start date.
-
-     . When given the start and the end date, calculate the TMIN, TAVG, and TMAX for dates between the start and end date inclusive.
+-   /api/v1.0/<start> and /api/v1.0/<start>/<end>
+    -  Return a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start or start-end range.
+    -  When given the start only, calculate TMIN, TAVG, and TMAX for all dates greater than and equal to the start date.
+    -  When given the start and the end date, calculate the TMIN, TAVG, and TMAX for dates between the start and end date inclusive.
 
 ## Hints
 
-    . You will need to join the station and measurement tables for some of the queries.
-
-    . Use Flask jsonify to convert your API data into a valid JSON response object.
+    -  You will need to join the station and measurement tables for some of the queries.
+    -  Use Flask jsonify to convert your API data into a valid JSON response object.
   
 ##  Bonus: Other Recommended Analyses
   
-  . The following are optional challenge queries. These are highly recommended to attempt, but not required for the homework.
-
-  . Use the provided temp_analysis_bonus_1_starter.ipynb and temp_analysis_bonus_2_starter.ipynb starter notebooks for each bonus challenge.
+ -  The following are optional challenge queries. These are highly recommended to attempt, but not required for the homework.
+ -  Use the provided temp_analysis_bonus_1_starter.ipynb and temp_analysis_bonus_2_starter.ipynb starter notebooks for each bonus challenge.
   
 ## Temperature Analysis I
   
- . Hawaii is reputed to enjoy mild weather all year. Is there a meaningful difference between the temperature in June and December?
- 
- . The the average temperature in June at all stations across all available years in the dataset was: 74.94 F.
-
- . The the average temperature in December at all stations across all available years in the dataset was: 71.04 F.
-
- . Using a paired t-test, it was determined the difference in the means was statistically significant and the analysis and plot are given below.
+ -  Hawaii is reputed to enjoy mild weather all year. Is there a meaningful difference between the temperature in June and December?
+ -  The the average temperature in June at all stations across all available years in the dataset was: 74.94 F.
+ -  The the average temperature in December at all stations across all available years in the dataset was: 71.04 F.
+ -  Using a paired t-test, it was determined the difference in the means was statistically significant and the analysis and plot are given below.
 
   
   
 ![tem11](https://user-images.githubusercontent.com/84547558/156441478-2c3f5631-d4de-4bcc-8363-1d664fa2713d.png)
 
-     Fig.5 Scatter and histogram plots of June and December temperatures.
+Fig.5 Scatter and histogram plots of June and December temperatures.
 
 June and December temperature observations were retrieved by converting string dates to datetime objects in order to filter queries by month.
 Null hypothesis: The mean difference between the temperatures in June and December is zero.
 A paired t-test was used to compare the means of the same group in this case, the mean temperature observations are of the same stations,
-just for different timepoints. The p-value of 0.0001 is less than 0.05 so we reject the null hypothesis and conclude that the data is statistically              significant.The mean temperature difference between the June and December is a mere 3.9 degrees Fahrenheit. The result does not appear to show much 
-of a difference. But the t-test with very low p-value indicates that the difference is statistically significant. So while the difference is meaningful,          the actual difference is not, thereby indicating that you can travel to Hawaii and enjoy in 70 degrees temperature year-round.
+just for different timepoints. The p-value of 0.0001 is less than 0.05 so we reject the null hypothesis and conclude that the data is statistically      significant.The mean temperature difference between the June and December is a mere 3.9 degrees Fahrenheit. The result does not appear to show much 
+of a difference. But the t-test with very low p-value indicates that the difference is statistically significant. So while the difference is meaningful,  the actual difference is not, thereby indicating that you can travel to Hawaii and enjoy in 70 degrees temperature year-round.
   
   
 ## Temperature Analysis II
   
-. A function called calc_temps that will accept a start date and end date in the format %Y-%m-%d and return the minimum, average, and maximum temperatures for   that range of dates was used to calculate the min, avg, and max temperatures for my trip using the matching dates from the previous year:
+-  A function called calc_temps that will accept a start date and end date in the format %Y-%m-%d and return the minimum, average, and maximum temperatures for   that range of dates was used to calculate the min, avg, and max temperatures for my trip using the matching dates from the previous year:
 
       . The lowest temperature recorded was: 58.0 F
       . The highest temperature recorded was: 87.0 F
@@ -174,20 +160,18 @@ of a difference. But the t-test with very low p-value indicates that the differe
   
 ![bar](https://user-images.githubusercontent.com/84547558/156444805-ab4bfb41-3e5a-439a-8ac6-bcb57eafd5c4.png)
   
-      Fig.6 The min, avg, and max temperatures plotted as a bar chart.
+Fig.6 The min, avg, and max temperatures plotted as a bar chart.
   
   
 ## Daily Rainfall Average
   
-  . Now that you have an idea of the temperature lets check to see what the rainfall has been, you don't want a when it rains the whole time!
-
-  . Calculate the rainfall per weather station using the previous year's matching dates.
-
-  . Sort this in descending order by precipitation amount and list the station, name, latitude, longitude, and elevation.
+-  Now that you have an idea of the temperature lets check to see what the rainfall has been, you don't want a when it rains the whole time!
+-  Calculate the rainfall per weather station using the previous year's matching dates.
+-  Sort this in descending order by precipitation amount and list the station, name, latitude, longitude, and elevation.
 
  ![r](https://user-images.githubusercontent.com/84547558/156447971-6796d883-91fa-4f8b-b662-1b82471de1e2.png)
 
-      Fig.7 Calculated the rainfall per weather station using the previous year's matching dates.
+Fig.7 Calculated the rainfall per weather station using the previous year's matching dates.
 
 ## Daily Temperature Normals
   
@@ -204,7 +188,7 @@ of a difference. But the t-test with very low p-value indicates that the differe
   
 ![ar](https://user-images.githubusercontent.com/84547558/156448798-54b78941-33e1-4c33-94ba-81cf3ec179ca.png)  
   
-      Fig.8 Area plot for daily min, ave and max temperatures.
+Fig.8 Area plot for daily min, ave and max temperatures.
 
 
   
