@@ -13,9 +13,9 @@ Two main works done are:
   
   3. Bonus challenges   
               
-                 3.1 Temperature analysis
+  -  3.1 Temperature analysis
   
-                 3.2 Daily rainfall average
+   - 3.2 Daily rainfall average
   
 Remarks for files in repository:
      
@@ -40,15 +40,11 @@ The following instructions have been followed and asnwers were computed accordin
 
 ## Step 1 - Climate Analysis and Exploration
 
-    . Use the provided starter notebook and hawaii.sqlite files to complete your climate analysis and data exploration.
-
-    . Use SQLAlchemy create_engine to connect to your sqlite database.
-
-    . Use SQLAlchemy automap_base() to reflect your tables into classes and save a reference to those classes called Station and Measurement.
-
-    . Link Python to the database by creating an SQLAlchemy session.
-
-    . Important Don't forget to close out your session at the end of your notebook.
+  -  Use the provided starter notebook and hawaii.sqlite files to complete your climate analysis and data exploration.
+  -  Use SQLAlchemy create_engine to connect to your sqlite database.
+  -  Use SQLAlchemy automap_base() to reflect your tables into classes and save a reference to those classes called Station and Measurement.
+  -  Link Python to the database by creating an SQLAlchemy session.
+  -  Important Don't forget to close out your session at the end of your notebook.
 
 ## Precipitation Analysis
 
