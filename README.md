@@ -191,20 +191,16 @@ of a difference. But the t-test with very low p-value indicates that the differe
 
 ## Daily Temperature Normals
   
--  Calculate the daily normals for the duration of your trip. Normals are the averages for the min, avg, and max temperatures. 
+-   Calculate the daily normals for the duration of your trip. Normals are the averages for the min, avg, and max temperatures. 
     You are provided with a function called daily_normals that will calculate the daily normals for a specific date. This date string
     will be in the format %m-%d. Be sure to use all historic TOBS that match that date string.
   
     -  Set the start and end date of the trip.
     -  Use the date to create a range of dates.
-
-  -  Strip off the year and save a list of strings in the format %m-%d.
-
-        . Use the daily_normals function to calculate the normals for each date string and append the results to a list called normals.
-
-        . Load the list of daily normals into a Pandas DataFrame and set the index equal to the date.
-
-        . Use Pandas to plot an area plot (stacked=False) for the daily normals.
+    -  Strip off the year and save a list of strings in the format %m-%d.
+    -  Use the daily_normals function to calculate the normals for each date string and append the results to a list called normals.
+    -  Load the list of daily normals into a Pandas DataFrame and set the index equal to the date.
+    -  Use Pandas to plot an area plot (stacked=False) for the daily normals.
   
 ![ar](https://user-images.githubusercontent.com/84547558/156448798-54b78941-33e1-4c33-94ba-81cf3ec179ca.png)  
   
