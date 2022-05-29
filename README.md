@@ -13,9 +13,8 @@ Two main works done are:
   
   3. Bonus challenges   
               
-    3.1 Temperature analysis
-  
-    3.2 Daily rainfall average
+      -  Temperature analysis
+      -  Daily rainfall average
   
 Remarks for files in repository:
      
@@ -85,16 +84,13 @@ The following instructions have been followed and asnwers were computed accordin
 
 ![temp](https://user-images.githubusercontent.com/84547558/156429655-bb2de60a-08b8-4aab-9b8f-25d45dfa0c78.png)
 
-    Fig.3 Temperatures recoreded at station USC00519281 within 12 months.
-    
-    
-   .  The database was queired to determine the total number of stations: 9
-
-   . The most active station was determined to be 'USC00519281'
+Fig.3 Temperatures recoreded at station USC00519281 within 12 months.
+    -  The database was queired to determine the total number of stations:9 
+    - The most active station was determined to be 'USC00519281'
    
    ![s9](https://user-images.githubusercontent.com/84547558/156440524-87fd1706-c0a4-4b0f-abdb-aa36bff5338e.png)
 
-    Fig.4 The list of stations and observation counts in descending order.
+Fig.4 The list of stations and observation counts in descending order.
     
     
 ## Step 2 - Climate App
@@ -194,16 +190,15 @@ of a difference. But the t-test with very low p-value indicates that the differe
       Fig.7 Calculated the rainfall per weather station using the previous year's matching dates.
 
 ## Daily Temperature Normals
-
-  . Calculate the daily normals for the duration of your trip. Normals are the averages for the min, avg, and max temperatures. 
+  
+-  Calculate the daily normals for the duration of your trip. Normals are the averages for the min, avg, and max temperatures. 
     You are provided with a function called daily_normals that will calculate the daily normals for a specific date. This date string
     will be in the format %m-%d. Be sure to use all historic TOBS that match that date string.
- 
-        . Set the start and end date of the trip.
+  
+    -  Set the start and end date of the trip.
+    -  Use the date to create a range of dates.
 
-        . Use the date to create a range of dates.
-
-        . Strip off the year and save a list of strings in the format %m-%d.
+  -  Strip off the year and save a list of strings in the format %m-%d.
 
         . Use the daily_normals function to calculate the normals for each date string and append the results to a list called normals.
 
